@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+
+
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1>Welcome, @User.Identity.Name!</h1>
+    }
+    else
+    {
+        <h1>Not Logged In</h1>
+    }
+    </div>
+</main>
